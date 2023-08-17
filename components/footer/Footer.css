@@ -1,0 +1,49 @@
+.footers {
+  
+  /* background: red; */
+  position: relative;
+  z-index: 7;
+  width: 100%;
+ 
+  bottom: 0;
+}
+
+footer {
+  height: 164px;
+  display: flex;
+  align-items: center;
+
+
+  justify-content: center;
+  background-color: hsl(0 0% 100% / 0.4);
+}
+footer .row {
+  width: 100%;
+}
+
+footer .row .title a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .row .title {
+  font-weight: bold;
+  color: white;
+}
+
+.col-footer{
+    display: flex;
+    gap: 12px;
+}
+
+.li-end{
+  display: flex;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 670px) {
+  footer .row .title {
+    width: 100%;
+  }
+}

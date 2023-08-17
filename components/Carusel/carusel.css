@@ -1,0 +1,43 @@
+.sarlavhaCarus {
+  display: flex;
+}
+
+.slick-next,.slick-prev{
+  display: none !important;
+}
+
+.cadw{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.7s;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  background: hsl(0 0% 100% / 0.7)
+}
+
+.cardw__footer{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  border-radius:  0 0 12px 12px;
+  background: rgba(17, 119, 183, 0.468)
+}
+
+.cardw__action{
+  color: white;
+  display: none;
+}
+

@@ -1,0 +1,12 @@
+.about-page {
+    height: 164px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 90px;
+    padding-top: 20px;
+  
+    justify-content: center;
+    background-color: hsl(0 0% 100% / 0.4);
+  }

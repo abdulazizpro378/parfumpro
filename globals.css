@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.loaders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  width: 106px;
+  height: 56px;
+  display: block;
+  margin: 30px auto;
+  background-image: linear-gradient(#ff0000 50px, transparent 0),
+    linear-gradient(#ff0000 50px, transparent 0),
+    linear-gradient(#ff0000 50px, transparent 0),
+    linear-gradient(#ff0000 50px, transparent 0),
+    radial-gradient(circle 14px, #ff0000 100%, transparent 0);
+  background-size: 48px 15px, 15px 35px, 15px 35px, 25px 15px, 28px 28px;
+  background-position: 25px 5px, 58px 20px, 25px 17px, 2px 37px, 76px 0px;
+  background-repeat: no-repeat;
+  position: relative;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+  margin-top: -50px;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border: 6px solid #e1e1e1;
+  border-radius: 50%;
+  left: -45px;
+  top: -10px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#ff0000 64px, transparent 0),
+    linear-gradient(#ff0000 66px, transparent 0),
+    radial-gradient(circle 4px, #ff0000 100%, transparent 0);
+  background-size: 40px 1px, 1px 40px, 8px 8px;
+  background-position: center center;
+  box-sizing: border-box;
+  animation: bike 0.3s linear infinite;
+}
+
+.loader::before {
+  left: 25px;
+  top: 60px;
+}
+
+@keyframes bike {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* card */
+
+.card {
+  width: 300px;
+  /* height: 254px; */
+  background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  position: relative;
+  margin: auto;
+  font-family: inherit;
+}
+
+.card span {
+  font-weight: 600;
+  color: white;
+  /* color: red; */
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.card .img{
+  /* width: 70px; */
+  height: 135px;
+
+  width: 300px;
+  background: #e8e8e8;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+
+.box2-1.img{
+  height: 135px;
+
+  width: 300px;
+  background: #e8e8e8;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+
+.card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  background: #e8e8e8;
+  color: #111111;
+  font-weight: 600;
+}
+
+.card button:hover {
+  background: #212121;
+  color: #ffffff;
+}
